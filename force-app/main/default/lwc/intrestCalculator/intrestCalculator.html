@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Intrest calculator">
+        <lightning-layout multiple-rows>
+                <lightning-layout-item size="8" padding="arround-medium">
+                    <lightning-input type="number" label="Enter Principal" onchange={principalChangeHandler}></lightning-input>
+                </lightning-layout-item>
+            
+                <lightning-layout-item size="12" padding="arround-medium">
+                    <lightning-input type="number" label="Enter Number of years" onchange={timeChangeHandler}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" padding="arround-medium">
+                    <lightning-input type="number" label="Enter Rate" onchange={rateIntrestChangeHandler}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" padding="arround-medium">
+                    <lightning-button label="Calculate " icon-position="center" onclick={calculateSiHandler}></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" padding="arround-medium">
+                    <lightning-formatted-text value={currentOutput}></lightning-formatted-text>
+                </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+    
+</template>

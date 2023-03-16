@@ -1,0 +1,13 @@
+<template>
+                <lightning-card title="Create a New Contact" icon-name="standard:account">
+                    <div class="slds-card__body slds-p-horizontal_small">
+                        <lightning-input label="First Name" value={firstName} onchange={handleFirstNameChange}></lightning-input>
+                        <lightning-input label="Last Name" value={lastName} onchange={handleLastNameChange}></lightning-input>
+                        <lightning-input label="Email" value={email} onchange={handleEmailChange}></lightning-input>
+                        <lightning-button label="Create Contact" onclick={handleCreateContact}></lightning-button>
+                    </div>   
+                </lightning-card>
+</template>
+
+
+
